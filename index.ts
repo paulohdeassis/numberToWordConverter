@@ -3,7 +3,7 @@ import { num2WordsController } from './controller/num2WordsController';
 
 const app: Express = express();
 app.use(express.json())
-const port = 3000;
+const port = 4000;
 
 app.post('/', (req: Request, res: Response) => {
   const number = req.body.number
