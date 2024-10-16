@@ -1,8 +1,8 @@
 const extenso = require('extenso')
 
-export const num2Words = (number:number): string => {
+export const num2Words = (number:string): string => {
 
-    const convetedNumber = extenso(number)
+    const convetedNumber = extenso(number,{ mode: 'currency' })
     
     return convetedNumber
 }
